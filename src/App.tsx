@@ -1,7 +1,11 @@
 import { ConfigProvider } from "antd";
 import { lightTheme, darkTheme } from "./theme/theme";
 import { useTheme } from "./context/themeContext";
-import { Button } from "antd";
+import { Layout } from "antd";
+import "./App.css";
+import ThemeToggle from "./components/ThemeToggle";
+
+const { Content } = Layout;
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -10,18 +14,21 @@ function App() {
 
   return (
     <ConfigProvider theme={selectedTheme}>
-      <div
-        style={{
-          alignItems: "center",
-          justifyContent: "center",
-          display: "flex",
-          flexDirection: "column",
-          gap: 6,
-        }}
-      >
-        <p>Hello Vite!</p>
-        <Button onClick={toggleTheme}>Toggle Theme</Button>
-      </div>
+      <Layout style={{ height: "100vh", padding: "10px" }}>
+        <Content>
+          <div
+            style={{
+              alignItems: "center",
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+            }}
+          >
+            <p>Hello Vite!</p>
+            <ThemeToggle />
+          </div>
+        </Content>
+      </Layout>
     </ConfigProvider>
   );
 }
