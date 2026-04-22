@@ -8,7 +8,7 @@ import ThemeToggle from "./components/ThemeToggle";
 const { Content } = Layout;
 
 function App() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   const selectedTheme = theme === "light" ? lightTheme : darkTheme;
 
