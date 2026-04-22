@@ -1,4 +1,5 @@
 import { Layout } from "antd";
+import Navbar from "../Navbar";
 
 const { Header, Content, Footer } = Layout;
 
@@ -9,8 +10,8 @@ export default function MainLayout({
 }) {
   return (
     <Layout>
-      <Header>
-        <p>Navbar</p>
+      <Header style={{ padding: 0 }}>
+        <Navbar />
       </Header>
 
       <Content>{children}</Content>
