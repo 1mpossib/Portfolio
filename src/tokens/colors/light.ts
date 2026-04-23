@@ -1,21 +1,19 @@
 export const lightColors = {
   colorPrimary: "#3B82F6",
   colorPrimaryHover: "#2563EB",
-  colorPrimaryActive: "#1D4ED8",
 
-  colorBgBase: "#F5F7FB",
+  colorBgLayout: "#F8FAFC",
   colorBgContainer: "#FFFFFF",
   colorBgElevated: "#FFFFFF",
 
-  colorBorder: "#E5E7EB",
-  colorDivider: "#E5E7EB",
+  colorText: "#1E293B",
+  colorTextDescription: "#64748B",
+  colorTextHeading: "#0F172A",
 
-  colorTextBase: "#111827",
-  colorTextSecondary: "#6B7280",
-  colorTextTertiary: "#9CA3AF",
+  colorBorderSecondary: "#F1F5F9",
+  colorSplit: "#E2E8F0",
 
-  colorFill: "#F3F4F6",
-  colorFillSecondary: "#E5E7EB",
-
-  boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+  borderRadius: 12,
+  boxShadow:
+    "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
 };

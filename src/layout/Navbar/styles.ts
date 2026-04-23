@@ -9,11 +9,8 @@ export const Nav = styled.div<NavProps>`
   background-color: ${(props) =>
     props.$theme === "dark"
       ? "rgba(15, 23, 42, 0.8)"
-      : "rgba(248, 250, 252, 0.8)"};
+      : "rgba(248, 250, 252, 1)"};
   color: ${(props) => (props.$theme === "dark" ? "#f1f5f9" : "#0f172a")};
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
   border-bottom: 1px solid
     ${(props) =>
       props.$theme === "dark"

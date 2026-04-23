@@ -8,6 +8,7 @@ export default function ThemeToggle() {
   return (
     <Button
       shape="circle"
+      type="text"
       onClick={toggleTheme}
       icon={theme === "dark" ? <MoonOutlined /> : <SunOutlined />}
     />

@@ -3,6 +3,7 @@ import { lightTheme, darkTheme } from "./theme/theme";
 import { useTheme } from "./context/themeContext";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
+import Hero from "./sections/Hero";
 
 function App() {
   const { theme } = useTheme();
@@ -11,7 +12,7 @@ function App() {
   return (
     <ConfigProvider theme={selectedTheme}>
       <MainLayout>
-        <p>Hello Vite!</p>
+        <Hero />
       </MainLayout>
     </ConfigProvider>
   );

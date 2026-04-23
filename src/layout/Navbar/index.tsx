@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <Nav $theme={theme}>
-      <Row align="middle" justify="space-around" style={{ padding: "0 16px" }}>
+      <Row align="middle" justify="space-around">
         <Col span={4}>
           <NavItem href="#hero">Ruan Belmiro</NavItem>
         </Col>
